@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .cube {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      margin: 100px;
+      transform-style: preserve-3d;
+      perspective: 1000px;
+      transform: rotateX(25deg) rotateY(-25deg);
+    }
+
+    .face {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      /* transition: all 1s ease-in-out; */
+
+      /* First these 2 property was here , then i shifted to the parent div */
+      /* transform-style: preserve-3d;
+      perspective: 1000px; */
+    }
+
+    .one {
+      background-color: rgb(230, 143, 12);
+      /* z-index: 2; */
+      /* transform: translateY(-9px); */
+    }
+    .two {
+      background-color: blue;
+      transform: rotateY(90deg) translateZ(-100px) translateX(-100px);
+    }
+
+    .three {
+      background-color: rgb(74, 143, 6);
+      transform: rotateY(90deg) translateX(-100px) translateZ(100px);
+    }
+    .four {
+      background-color: aqua;
+      transform: rotateX(90deg) translateZ(100px) translateY(100px);
+    }
+    .five {
+      background-color: blueviolet;
+      transform: rotateX(90deg) translateZ(-100px) translateY(100px);
+    }
+    /* .one:hover {
+      transform: rotateX(45deg) rotateY(45deg);
+    } */
+  </style>
+  <body>
+    <div class="cube">
+      <div class="face one"></div>
+      <div class="face two"></div>
+      <div class="face three"></div>
+      <div class="face four"></div>
+      <div class="face five"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Music Player App (HTML/CSS)</title>
+  </head>
+
+  <!-- Layout -->
+  <body>
+    <!-- Nav Created  -->
+    <nav class="nav-container">
+      <div class="left">
+        <a href="/index.html">
+          <img
+            class="logo"
+            src="./assets/images/logo.png"
+            alt="Logo-icon-image"
+          />
+        </a>
+        <span>Favourites</span>
+      </div>
+      <div class="right">
+        <div class="search-container">
+          <i class="fas fa-search" style="cursor: pointer"></i>
+          <input type="text" placeholder="Search" />
+          <i class="fas fa-microphone" style="cursor: pointer"></i>
+        </div>
+
+        <img
+          class="notification_bell"
+          src="./assets/images/notification-bell.png"
+          alt="notification_bell"
+        />
+        <img
+          src="./assets/images/profile.png"
+          class="profile"
+          alt="progile_picture"
+        />
+      </div>
+    </nav>
+
+    <!-- Main Section -->
+    <main class="playlist-container">
+      <!-- Left Side -->
+      <div class="left-side-playlist">
+        <div class="left-side-card">
+          <div>
+            <img
+              src="./assets/images/coldplay_card_700x900.png"
+              alt="cold-play image"
+              class="cold-play-image"
+            />
+          </div>
+          <div class="right-side-music-details">
+            <div class="music-details">
+              <div class="music-heading">
+                <h2>Cold Play</h2>
+                <span class="cold-play-follower">851 Followers</span>
+              </div>
+
+              <span class="british-band">British Band</span>
+              <p class="coldplay-description">
+                Coldplay is a good and famous band,Coldplay is a good and famous
+                bandColdplay is a good and famous bandColdplay is a good and
+                famous bandColdplay is a good and famous bandColdplay is a good
+                and famous band
+              </p>
+            </div>
+
+            <div class="play-follow-btn">
+              <button class="play-all-btn">Play All</button>
+              <button class="follow-btn">Follow</button>
+            </div>
+            <div class="count-of-track-n-albums">
+              <p class="track-album">247 Tracks | 128 Albums</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Like , add to playlist section  -->
+        <div class="like-add-to-playlist-slim-card-container">
+          <div class="left-side-like-add-to-playlist">
+            <span>01</span>
+            <img
+              src="./assets/images/image_dragon.png"
+              alt="like-add"
+              class="like-add-image"
+            />
+            <div class="play-when-hover">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="left-side-like-add-title">
+              <i>Mirage</i>
+              <span>Else</span>
+            </div>
+          </div>
+          <div class="right-side-like-add-to-playlist-icons">
+            <i class="far fa-heart" onClick="alert('Liked')"></i>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+
+        <!-- Like , add to playlist section  -->
+        <div class="like-add-to-playlist-slim-card-container">
+          <div class="left-side-like-add-to-playlist">
+            <span>02</span>
+            <img
+              src="./assets/images/image_dragon.png"
+              alt="like-add"
+              class="like-add-image"
+            />
+            <div class="play-when-hover">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="left-side-like-add-title">
+              <i>Polly</i>
+              <span>Eclipse</span>
+            </div>
+          </div>
+          <div class="right-side-like-add-to-playlist-icons">
+            <i class="far fa-heart" onClick="alert('Liked')"></i>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <!-- Like , add to playlist section  -->
+        <div class="like-add-to-playlist-slim-card-container">
+          <div class="left-side-like-add-to-playlist">
+            <span>03</span>
+            <img
+              src="./assets/images/image_dragon.png"
+              alt="like-add"
+              class="like-add-image"
+            />
+            <div class="play-when-hover">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="left-side-like-add-title">
+              <i>Yoelly</i>
+              <span>Clipse</span>
+            </div>
+          </div>
+          <div class="right-side-like-add-to-playlist-icons">
+            <i class="far fa-heart" onClick="alert('Liked')"></i>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+
+        <!-- Like , add to playlist section  -->
+        <div class="like-add-to-playlist-slim-card-container">
+          <div class="left-side-like-add-to-playlist">
+            <span>04</span>
+            <img
+              src="./assets/images/image_dragon.png"
+              alt="like-add"
+              class="like-add-image"
+            />
+            <div class="play-when-hover">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="left-side-like-add-title">
+              <i>Lilly</i>
+              <span>Iipse</span>
+            </div>
+          </div>
+          <div class="right-side-like-add-to-playlist-icons">
+            <i class="far fa-heart" onClick="alert('Liked')"></i>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+
+        <!-- Like , add to playlist section  -->
+        <div class="like-add-to-playlist-slim-card-container">
+          <div class="left-side-like-add-to-playlist">
+            <span>05</span>
+            <img
+              src="./assets/images/image_dragon.png"
+              alt="like-add"
+              class="like-add-image"
+            />
+            <div class="play-when-hover">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="left-side-like-add-title">
+              <i>Yellony</i>
+              <span>Perese</span>
+            </div>
+          </div>
+          <div class="right-side-like-add-to-playlist-icons">
+            <i class="far fa-heart" onClick="alert('Liked')"></i>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+
+        <!-- Like , add to playlist section  -->
+        <div class="like-add-to-playlist-slim-card-container">
+          <div class="left-side-like-add-to-playlist">
+            <span>06</span>
+            <img
+              src="./assets/images/image_dragon.png"
+              alt="like-add"
+              class="like-add-image"
+            />
+            <div class="play-when-hover">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="left-side-like-add-title">
+              <i>Albert</i>
+              <span>Imagine</span>
+            </div>
+          </div>
+          <div class="right-side-like-add-to-playlist-icons">
+            <i class="far fa-heart" onClick="alert('Liked')"></i>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+
+        <!-- Like , add to playlist section  -->
+        <div class="like-add-to-playlist-slim-card-container">
+          <div class="left-side-like-add-to-playlist">
+            <span>07</span>
+            <img
+              src="./assets/images/image_dragon.png"
+              alt="like-add"
+              class="like-add-image"
+            />
+            <div class="play-when-hover">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="left-side-like-add-title">
+              <i>Polly</i>
+              <span>Eclipse</span>
+            </div>
+          </div>
+          <div class="right-side-like-add-to-playlist-icons">
+            <i class="far fa-heart" onClick="alert('Liked')"></i>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Sidebar -->
+      <div class="right-side-playlist">
+        <div class="similar-artists-container">
+          <div class="similar-artists-heading">
+            <h3>Similar Artists</h3>
+            <span class="view-all">View All</span>
+          </div>
+
+          <!-- Scroll effect implementation -->
+          <div class="similar-artists-contents-scrollable">
+            <div class="similar-artists-contents">
+              <div class="similar-artists-detailed-contents">
+                <img
+                  src="./assets/images/image_dragon.png"
+                  alt=""
+                  class="image-dragon-image"
+                />
+                <div class="similar-artist-name">
+                  <p class="title">Image Dragons</p>
+                  <p class="band-name">Pop Brand</p>
+                </div>
+              </div>
+
+              <div class="triple-dot-timing-container">
+                <i class="fa-solid fa-ellipsis"></i>
+                <p class="play-timing">4:44</p>
+              </div>
+            </div>
+            <!-- Repeat the structure -->
+            <div class="similar-artists-contents">
+              <div class="similar-artists-detailed-contents">
+                <img
+                  src="./assets/images/image_dragon.png"
+                  alt=""
+                  class="image-dragon-image"
+                />
+                <div class="similar-artist-name">
+                  <p class="title">Image Dragons</p>
+                  <p class="band-name">Pop Brand</p>
+                </div>
+              </div>
+
+              <div class="triple-dot-timing-container">
+                <i class="fa-solid fa-ellipsis"></i>
+                <p class="play-timing">4:44</p>
+              </div>
+            </div>
+
+            <!-- Repeat the structure -->
+            <div class="similar-artists-contents">
+              <div class="similar-artists-detailed-contents">
+                <img
+                  src="./assets/images/image_dragon.png"
+                  alt=""
+                  class="image-dragon-image"
+                />
+                <div class="similar-artist-name">
+                  <p class="title">Image Dragons</p>
+                  <p class="band-name">Pop Brand</p>
+                </div>
+              </div>
+
+              <div class="triple-dot-timing-container">
+                <i class="fa-solid fa-ellipsis"></i>
+                <p class="play-timing">4:44</p>
+              </div>
+            </div>
+
+            <!-- Repeat the structure -->
+            <div class="similar-artists-contents">
+              <div class="similar-artists-detailed-contents">
+                <img
+                  src="./assets/images/image_dragon.png"
+                  alt=""
+                  class="image-dragon-image"
+                />
+                <div class="similar-artist-name">
+                  <p class="title">Image Dragons</p>
+                  <p class="band-name">Pop Brand</p>
+                </div>
+              </div>
+
+              <div class="triple-dot-timing-container">
+                <i class="fa-solid fa-ellipsis"></i>
+                <p class="play-timing">4:44</p>
+              </div>
+            </div>
+          </div>
+          <!-- Scroll effect implementation End -->
+        </div>
+
+        <!-- Recently-played section started  -->
+        <div class="recently-played-container">
+          <div class="similar-artists-heading">
+            <h3>Recently Played</h3>
+            <span class="view-all">View All</span>
+          </div>
+
+          <div class="make-it-scrollable">
+            <!-- Repeat  -->
+            <div
+              class="like-add-to-playlist-slim-card-container background-remove"
+            >
+              <div class="left-side-like-add-to-playlist">
+                <span>01</span>
+                <img
+                  src="./assets/images/image_dragon.png"
+                  alt="like-add"
+                  class="like-add-image"
+                />
+                <div class="left-side-like-add-title">
+                  <i>Mirage</i>
+                  <span>Else</span>
+                </div>
+              </div>
+              <div class="right-side-like-add-to-playlist-icons">
+                <i class="far fa-heart" onClick="alert('Liked')"></i>
+                <!-- <i class="fa-solid fa-plus"></i> -->
+              </div>
+            </div>
+
+            <!-- Repeat  -->
+            <div
+              class="like-add-to-playlist-slim-card-container background-remove"
+            >
+              <div class="left-side-like-add-to-playlist">
+                <span>02</span>
+                <img
+                  src="./assets/images/image_dragon.png"
+                  alt="like-add"
+                  class="like-add-image"
+                />
+                <div class="left-side-like-add-title">
+                  <i>Mirage</i>
+                  <span>Else</span>
+                </div>
+              </div>
+              <div class="right-side-like-add-to-playlist-icons">
+                <i class="far fa-heart" onClick="alert('Liked')"></i>
+                <!-- <i class="fa-solid fa-plus"></i> -->
+              </div>
+            </div>
+
+            <!-- Repeat  -->
+            <div
+              class="like-add-to-playlist-slim-card-container background-remove"
+            >
+              <div class="left-side-like-add-to-playlist">
+                <span>03</span>
+                <img
+                  src="./assets/images/image_dragon.png"
+                  alt="like-add"
+                  class="like-add-image"
+                />
+                <div class="left-side-like-add-title">
+                  <i>Mirage</i>
+                  <span>Else</span>
+                </div>
+              </div>
+              <div class="right-side-like-add-to-playlist-icons">
+                <i class="far fa-heart" onClick="alert('Liked')"></i>
+                <!-- <i class="fa-solid fa-plus"></i> -->
+              </div>
+            </div>
+
+            <!-- Repeat  -->
+            <div
+              class="like-add-to-playlist-slim-card-container background-remove"
+            >
+              <div class="left-side-like-add-to-playlist">
+                <span>04</span>
+                <img
+                  src="./assets/images/image_dragon.png"
+                  alt="like-add"
+                  class="like-add-image"
+                />
+                <div class="left-side-like-add-title">
+                  <i>Mirage</i>
+                  <span>Else</span>
+                </div>
+              </div>
+              <div class="right-side-like-add-to-playlist-icons">
+                <i class="far fa-heart" onClick="alert('Liked')"></i>
+                <!-- <i class="fa-solid fa-plus"></i> -->
+              </div>
+            </div>
+            <!-- Repeat  -->
+            <div
+              class="like-add-to-playlist-slim-card-container background-remove"
+            >
+              <div class="left-side-like-add-to-playlist">
+                <span>04</span>
+                <img
+                  src="./assets/images/image_dragon.png"
+                  alt="like-add"
+                  class="like-add-image"
+                />
+                <div class="left-side-like-add-title">
+                  <i>Mirage</i>
+                  <span>Else</span>
+                </div>
+              </div>
+              <div class="right-side-like-add-to-playlist-icons">
+                <i class="far fa-heart" onClick="alert('Liked')"></i>
+                <!-- <i class="fa-solid fa-plus"></i> -->
+              </div>
+            </div>
+            <!-- Repeat  -->
+            <div
+              class="like-add-to-playlist-slim-card-container background-remove"
+            >
+              <div class="left-side-like-add-to-playlist">
+                <span>04</span>
+                <img
+                  src="./assets/images/image_dragon.png"
+                  alt="like-add"
+                  class="like-add-image"
+                />
+                <div class="left-side-like-add-title">
+                  <i>Mirage</i>
+                  <span>Else</span>
+                </div>
+              </div>
+              <div class="right-side-like-add-to-playlist-icons">
+                <i class="far fa-heart" onClick="alert('Liked')"></i>
+                <!-- <i class="fa-solid fa-plus"></i> -->
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Created  -->
+    <footer>
+      <div class="footer-container">
+        <div class="left-footer">
+          <img
+            src="./assets/images/poster-icon-image.png"
+            alt=" image"
+            class="left-footer-image"
+          />
+          <div class="artist-container">
+            <div class="left-footer-artist">
+              <div class="marquee">
+                <p>Imagine by John image hello long text goes here...</p>
+              </div>
+              <p>John Lenon</p>
+            </div>
+            <div class="left-footer-icon">
+              <i class="far fa-heart" onClick="alert('Liked')"></i>
+              <i class="fa-solid fa-circle-half-stroke"></i>
+            </div>
+          </div>
+        </div>
+        <div class="middle-footer">
+          <div class="play-control-container">
+            <div class="top-play-controller">
+              <i class="fa-solid fa-shuffle"></i>
+              <i class="fa-solid fa-backward-step"></i>
+              <i class="fa-solid fa-play"></i>
+              <i class="fa-solid fa-forward-step"></i>
+              <i class="fa-solid fa-repeat"></i>
+            </div>
+            <div class="bottom-play-controller">
+              <span>1:47</span>
+              <progress
+                class="music-play-progress"
+                value="80"
+                max="100"
+              ></progress>
+              <span>2:39</span>
+            </div>
+          </div>
+        </div>
+        <div class="right-footer">
+          <i class="fa-solid fa-list-check"></i>
+          <i class="fa-solid fa-computer"></i>
+          <i class="fa-solid fa-volume-high"></i>
+          <progress class="volume-progress" value="40" max="100"></progress>
+          <i class="fa-solid fa-arrow-up-right-dots"></i>
+        </div>
+      </div>
+    </footer>
+    <script src="/scripts/script.js"></script>
+  </body>
+</html>

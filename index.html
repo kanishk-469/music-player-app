@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Music Player App (HTML/CSS)</title>
+  </head>
+
+  <body>
+    <nav class="nav-container">
+      <div class="left">
+        <a href="/index.html">
+          <img
+            class="logo"
+            src="./assets/images/logo.png"
+            alt="Logo-icon-image"
+          />
+        </a>
+        <span>Favourites</span>
+      </div>
+      <div class="right">
+        <div class="search-container">
+          <i class="fas fa-search" style="cursor: pointer"></i>
+          <input type="text" placeholder="Search" />
+          <i class="fas fa-microphone" style="cursor: pointer"></i>
+        </div>
+
+        <img
+          class="notification_bell"
+          src="./assets/images/notification-bell.png"
+          alt="notification_bell"
+        />
+        <img
+          src="./assets/images/profile.png"
+          class="profile"
+          alt="progile_picture"
+        />
+      </div>
+    </nav>
+    <div class="content-container">
+      <!-- Left Container / left section -->
+      <div class="left-container">
+        <div class="carousel">
+          <div class="carousel-image-container">
+            <img
+              class="carousel-image"
+              src="./assets/images/banner1.png"
+              alt=""
+            />
+          </div>
+          <div class="carousel-image-container">
+            <img
+              class="carousel-image"
+              src="./assets/images/banner2.png"
+              alt=""
+            />
+          </div>
+          <div class="carousel-image-container">
+            <img
+              class="carousel-image"
+              src="./assets/images/banner3.png"
+              alt=""
+            />
+          </div>
+          <!-- <div class="carousel-track-container">
+            <ul class="carousel-track">
+              <li class="carousel-slide">
+                <img src="./assets/images/banner1.png" alt="Slide 1" />
+              </li>
+              <li class="carousel-slide">
+                <img src="./assets/images/banner2.png" alt="Slide 2" />
+              </li>
+              <li class="carousel-slide">
+                <img src="./assets/images/banner3.png" alt="Slide 3" />
+              </li>
+            </ul>
+          </div>
+          <button class="carousel-button left">&#10094;</button>
+          <button class="carousel-button right">&#10095;</button> -->
+        </div>
+
+        <!-- Latest Music Release 2025 -->
+        <section class="section">
+          <h2>Latest Music Release 2025</h2>
+          <!-- Parent Layout , fixed and fluid Layout both implemented-->
+          <div class="latest-music-container">
+            <!-- children 1 -->
+            <div class="latest-music-release-section">
+              <div class="latest-music-release-card">
+                <div class="latest-music-release-image-title">
+                  <img
+                    class="latest-music-release-card-image"
+                    src="./assets/images/image_dragon.png"
+                    alt=""
+                  />
+                  <div class="latest-music-release-card-image-play-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+
+                  <div class="latest-music-release-card-title">
+                    <span>Onism</span>
+                    <span>Aug 11,2017</span>
+                  </div>
+                </div>
+                <div class="triple-dot-timing-container mt">
+                  <i
+                    class="fa-solid fa-ellipsis active"
+                    style="cursor: pointer"
+                    onclick="displayQueueDropdown('latest-release')"
+                  ></i>
+                  <div class="dropdown-layout-">
+                    <i class="fa-solid fa-play"></i>&nbsp;&nbsp;<span
+                      >Play Now</span
+                    >
+                    <hr />
+                    <i class="fa-solid fa-plus"></i>&nbsp;&nbsp;
+                    <span>Add To Queue</span>
+                    <hr />
+                    <i class="fa-solid fa-grip-lines"></i>&nbsp; &nbsp;<span
+                      >Add To Favourites</span
+                    >
+                    <hr />
+                    <i class="fa-solid fa-circle-info"></i> &nbsp;
+                    <span>Get Info</span>
+                  </div>
+                  <p class="play-timing">4:44</p>
+                </div>
+              </div>
+              <div class="latest-music-release-section">
+                <div class="latest-music-release-card">
+                  <div class="latest-music-release-image-title">
+                    <img
+                      class="latest-music-release-card-image"
+                      src="./assets/images/image_dragon.png"
+                      alt=""
+                    />
+                    <div class="latest-music-release-card-image-play-icon">
+                      <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="latest-music-release-card-title">
+                      <span>Onism</span>
+                      <span>Aug 11,2017</span>
+                    </div>
+                  </div>
+                  <div class="triple-dot-timing-container mt">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <p class="play-timing">4:44</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- children 2 -->
+            <div class="latest-music-release-section">
+              <div class="latest-music-release-card">
+                <div class="latest-music-release-image-title">
+                  <img
+                    class="latest-music-release-card-image"
+                    src="./assets/images/image_dragon.png"
+                    alt=""
+                  />
+                  <div class="latest-music-release-card-image-play-icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                  <div class="latest-music-release-card-title">
+                    <span>Onism</span>
+                    <span>Aug 11,2017</span>
+                  </div>
+                </div>
+                <div class="triple-dot-timing-container mt">
+                  <i class="fa-solid fa-ellipsis"></i>
+                  <p class="play-timing">4:44</p>
+                </div>
+              </div>
+              <div class="latest-music-release-section">
+                <div class="latest-music-release-card">
+                  <div class="latest-music-release-image-title">
+                    <img
+                      class="latest-music-release-card-image"
+                      src="./assets/images/image_dragon.png"
+                      alt=""
+                    />
+                    <div class="latest-music-release-card-image-play-icon">
+                      <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="latest-music-release-card-title">
+                      <span>Onism</span>
+                      <span>Aug 11,2017</span>
+                    </div>
+                  </div>
+                  <div class="triple-dot-timing-container mt">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <p class="play-timing">4:44</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Popular Artists -->
+        <section class="section">
+          <h2>Popular Artists</h2>
+          <div class="artists">
+            <div class="artist-card">
+              <img src="./assets/images/banner3.png" alt="Ed Sheeran" />
+              <div class="popular-artists-play-btn">
+                <a href="/playlist.html">
+                  <i class="fa-solid fa-play big-play-btn"></i
+                ></a>
+              </div>
+              <p>Ed Sheeran</p>
+            </div>
+            <!-- Repeat artist cards -->
+            <div class="artist-card">
+              <img src="./assets/images/banner3.png" alt="ColdPlay" />
+              <div class="popular-artists-play-btn">
+                <a href="/playlist.html">
+                  <i class="fa-solid fa-play big-play-btn"></i
+                ></a>
+              </div>
+              <p>ColdPlay</p>
+            </div>
+            <div class="artist-card">
+              <img src="./assets/images/banner3.png" alt="Zayn" />
+              <div class="popular-artists-play-btn">
+                <i class="fa-solid fa-play big-play-btn"></i>
+              </div>
+              <p>Zayn</p>
+            </div>
+            <div class="artist-card">
+              <img src="./assets/images/banner3.png" alt="Charlie" />
+              <div class="popular-artists-play-btn">
+                <i class="fa-solid fa-play big-play-btn"></i>
+              </div>
+              <p>Charlie Puth</p>
+            </div>
+            <div class="artist-card">
+              <img src="./assets/images/banner3.png" alt="Bruno" />
+              <div class="popular-artists-play-btn">
+                <i class="fa-solid fa-play big-play-btn"></i>
+              </div>
+              <p>Bruno Mars</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Stations -->
+        <section class="section">
+          <h2>Stations</h2>
+          <div class="stations">
+            <div class="station-icon">
+              <img src="./assets/images/stations.png" alt="" />
+            </div>
+            <div class="station">
+              <span> Love</span>
+              <img src="./assets/images/profile.png" alt="" />
+            </div>
+            <div class="station">
+              <span> Retro</span>
+              <img src="./assets/images/profile.png" alt="" />
+            </div>
+            <div class="station">
+              <span> Chill</span>
+              <img src="./assets/images/profile.png" alt="" />
+            </div>
+            <div class="station">
+              <span> Workout</span>
+              <img src="./assets/images/profile.png" alt="" />
+            </div>
+            <div class="station">
+              <span> Rock</span>
+              <img src="./assets/images/profile.png" alt="" />
+            </div>
+            <div class="station">
+              <span> Pop</span>
+              <img src="./assets/images/profile.png" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="section">
+          <h2>Categories</h2>
+          <div class="categories">
+            <div class="category">
+              <div class="party">Party</div>
+              <img src="./assets/images/party.png" alt="" />
+            </div>
+            <div class="category">
+              <div class="party">Electronic</div>
+              <img src="./assets/images/electronoc.jpg" alt="" />
+            </div>
+            <div class="category">
+              <div class="party">Road Trip</div>
+              <img src="./assets/images/road_trip.png" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Latest English -->
+        <section class="section">
+          <h2>Latest English</h2>
+          <div class="latest-release">
+            <!-- Repeat same cards as above -->
+            <div class="latest-release-card">
+              <img
+                src="./assets/images/poster-icon-image.png"
+                alt="latest-english"
+              />
+              <span class="latest-release-name">Onism</span>
+              <span class="latest-release-date">AUG 11, 2017</span>
+            </div>
+            <!-- Repeat same cards as above -->
+            <div class="latest-release-card">
+              <img
+                src="./assets/images/poster-icon-image.png"
+                alt="latest-english"
+              />
+              <span class="latest-release-name">Onism</span>
+              <span class="latest-release-date">AUG 11, 2017</span>
+            </div>
+            <!-- Repeat same cards as above -->
+            <div class="latest-release-card">
+              <img
+                src="./assets/images/poster-icon-image.png"
+                alt="latest-english"
+              />
+              <span class="latest-release-name">Onism</span>
+              <span class="latest-release-date">AUG 11, 2017</span>
+            </div>
+            <!-- Repeat same cards as above -->
+            <div class="latest-release-card">
+              <img
+                src="./assets/images/poster-icon-image.png"
+                alt="latest-english"
+              />
+              <span class="latest-release-name">Onism</span>
+              <span class="latest-release-date">AUG 11, 2017</span>
+            </div>
+            <!-- Repeat same cards as above -->
+            <div class="latest-release-card">
+              <img
+                src="./assets/images/poster-icon-image.png"
+                alt="latest-english"
+              />
+              <span class="latest-release-name">Onism</span>
+              <span class="latest-release-date">AUG 11, 2017</span>
+            </div>
+            <!-- Repeat same cards as above -->
+            <div class="latest-release-card">
+              <img
+                src="./assets/images/poster-icon-image.png"
+                alt="latest-english"
+              />
+              <span class="latest-release-name">Onism</span>
+              <span class="latest-release-date">AUG 11, 2017</span>
+            </div>
+            <!-- Repeat same cards as above -->
+            <div class="latest-release-card">
+              <img
+                src="./assets/images/poster-icon-image.png"
+                alt="latest-english"
+              />
+              <span class="latest-release-name">Onism</span>
+              <span class="latest-release-date">AUG 11, 2017</span>
+            </div>
+            <!-- Repeat same cards as above -->
+            <div class="latest-release-card">
+              <img
+                src="./assets/images/poster-icon-image.png"
+                alt="latest-english"
+              />
+              <span class="latest-release-name">Onism</span>
+              <span class="latest-release-date">AUG 11, 2017</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Latest Hindi -->
+        <section class="section">
+          <h2>Latest Hindi</h2>
+          <div class="latest-release">
+            <!-- Repeat same cards as above -->
+            <!-- Repeat same cards as above -->
+            <div class="latest-release-card">
+              <img
+                src="./assets/images/poster-icon-image.png"
+                alt="latest-english"
+              />
+              <span class="latest-release-name">Onism</span>
+              <span class="latest-release-date">AUG 11, 2017</span>
+            </div>
+
+            <!-- Repeat same cards as above -->
+            <div class="latest-release-card">
+              <img
+                src="./assets/images/poster-icon-image.png"
+                alt="latest-english"
+              />
+              <span class="latest-release-name">Onism</span>
+              <span class="latest-release-date">AUG 11, 2017</span>
+            </div>
+            <!-- Repeat same cards as above -->
+            <div class="latest-release-card">
+              <img
+                src="./assets/images/poster-icon-image.png"
+                alt="latest-english"
+              />
+              <span class="latest-release-name">Onism</span>
+              <span class="latest-release-date">AUG 11, 2017</span>
+            </div>
+            <!-- Repeat same cards as above -->
+            <div class="latest-release-card">
+              <img
+                src="./assets/images/poster-icon-image.png"
+                alt="latest-english"
+              />
+              <span class="latest-release-name">Onism</span>
+              <span class="latest-release-date">AUG 11, 2017</span>
+            </div>
+            <!-- Repeat same cards as above -->
+            <div class="latest-release-card">
+              <img
+                src="./assets/images/poster-icon-image.png"
+                alt="latest-english"
+              />
+              <span class="latest-release-name">Onism</span>
+              <span class="latest-release-date">AUG 11, 2017</span>
+            </div>
+            <!-- Repeat same cards as above -->
+            <div class="latest-release-card">
+              <img
+                src="./assets/images/poster-icon-image.png"
+                alt="latest-english"
+              />
+              <span class="latest-release-name">Onism</span>
+              <span class="latest-release-date">AUG 11, 2017</span>
+            </div>
+            <!-- Repeat same cards as above -->
+            <div class="latest-release-card">
+              <img
+                src="./assets/images/poster-icon-image.png"
+                alt="latest-english"
+              />
+              <span class="latest-release-name">Onism</span>
+              <span class="latest-release-date">AUG 11, 2017</span>
+            </div>
+            <!-- Repeat same cards as above -->
+            <div class="latest-release-card">
+              <img
+                src="./assets/images/poster-icon-image.png"
+                alt="latest-english"
+              />
+              <span class="latest-release-name">Onism</span>
+              <span class="latest-release-date">AUG 11, 2017</span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- right sidebar/ right container  -->
+      <div class="right-container">
+        <div class="queue-sidebar">
+          <div class="queue-sidebar-text">
+            <h2>Queue</h2>
+            <!-- <a href="/" style="color: blue; text-decoration: none"> -->
+            <div
+              class="queue-dropdown"
+              onclick="displayQueueDropdown('queue-dropdown')"
+            >
+              <span>Queue</span>
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+
+              <div class="dropdown-layout">
+                <span>Playlists</span>
+                <hr />
+                <span>Favourite Songs</span>
+              </div>
+            </div>
+            <!-- </a> -->
+          </div>
+          <ul class="queue-list">
+            <li class="queue-list-items">
+              <div class="queue-list-items-names">
+                <span>01</span>
+                <div class="image-wrapper">
+                  <img
+                    src="./assets/images/poster-icon-image.png"
+                    alt="Song"
+                    class="queue-list-items-image"
+                  />
+                  <div class="blur-layer"></div>
+                </div>
+
+                <div class="queue-info">
+                  <p>Mirage</p>
+                  <span>Else</span>
+                </div>
+              </div>
+              <i class="far fa-heart"></i>
+            </li>
+            <!-- Repeat items -->
+            <li class="queue-list-items">
+              <div class="queue-list-items-names">
+                <span>02</span>
+                <div class="image-wrapper">
+                  <img
+                    src="./assets/images/poster-icon-image.png"
+                    alt="Song"
+                    class="queue-list-items-image"
+                  />
+                  <div class="blur-layer"></div>
+                </div>
+
+                <div class="queue-info">
+                  <p>Irage</p>
+                  <span>Elselu</span>
+                </div>
+              </div>
+              <i class="far fa-heart"></i>
+            </li>
+            <!-- Repeat items -->
+            <li class="queue-list-items">
+              <div class="queue-list-items-names">
+                <span>04</span>
+                <div class="image-wrapper">
+                  <img
+                    src="./assets/images/poster-icon-image.png"
+                    alt="Song"
+                    class="queue-list-items-image"
+                  />
+                  <div class="blur-layer"></div>
+                </div>
+
+                <div class="queue-info">
+                  <p>Ragey</p>
+                  <span>Lawy</span>
+                </div>
+              </div>
+              <i class="far fa-heart"></i>
+            </li>
+            <!-- Repeat items -->
+            <li class="queue-list-items">
+              <div class="queue-list-items-names">
+                <span>05</span>
+                <div class="image-wrapper">
+                  <img
+                    src="./assets/images/poster-icon-image.png"
+                    alt="Song"
+                    class="queue-list-items-image"
+                  />
+                  <div class="blur-layer"></div>
+                </div>
+
+                <div class="queue-info">
+                  <p>Mirage</p>
+                  <span>Else</span>
+                </div>
+              </div>
+              <i class="far fa-heart"></i>
+            </li>
+            <!-- Repeat items -->
+            <li class="queue-list-items">
+              <div class="queue-list-items-names">
+                <span>06</span>
+                <div class="image-wrapper">
+                  <img
+                    src="./assets/images/poster-icon-image.png"
+                    alt="Song"
+                    class="queue-list-items-image"
+                  />
+                  <div class="blur-layer"></div>
+                </div>
+
+                <div class="queue-info">
+                  <p>Gary</p>
+                  <span>Sweete</span>
+                </div>
+              </div>
+              <i class="far fa-heart"></i>
+            </li>
+            <!-- Repeat items -->
+            <li class="queue-list-items">
+              <div class="queue-list-items-names">
+                <span>07</span>
+                <div class="image-wrapper">
+                  <img
+                    src="./assets/images/poster-icon-image.png"
+                    alt="Song"
+                    class="queue-list-items-image"
+                  />
+                  <div class="blur-layer"></div>
+                </div>
+
+                <div class="queue-info">
+                  <p>Lilly</p>
+                  <span>Tamil</span>
+                </div>
+              </div>
+              <i class="far fa-heart"></i>
+            </li>
+            <!-- Repeat items -->
+            <li class="queue-list-items">
+              <div class="queue-list-items-names">
+                <span>08</span>
+                <div class="image-wrapper">
+                  <img
+                    src="./assets/images/poster-icon-image.png"
+                    alt="Song"
+                    class="queue-list-items-image"
+                  />
+                  <div class="blur-layer"></div>
+                </div>
+
+                <div class="queue-info">
+                  <p>Gays</p>
+                  <span>Else</span>
+                </div>
+              </div>
+              <i class="far fa-heart"></i>
+            </li>
+            <!-- Repeat items -->
+            <li class="queue-list-items">
+              <div class="queue-list-items-names">
+                <span>09</span>
+                <div class="image-wrapper">
+                  <img
+                    src="./assets/images/poster-icon-image.png"
+                    alt="Song"
+                    class="queue-list-items-image"
+                  />
+                  <div class="blur-layer"></div>
+                </div>
+
+                <div class="queue-info">
+                  <p>Gilly</p>
+                  <span>Else</span>
+                </div>
+              </div>
+              <i class="far fa-heart"></i>
+            </li>
+
+            <!-- Repeat items -->
+            <li class="queue-list-items">
+              <div class="queue-list-items-names">
+                <span>10</span>
+                <div class="image-wrapper">
+                  <img
+                    src="./assets/images/poster-icon-image.png"
+                    alt="Song"
+                    class="queue-list-items-image"
+                  />
+                  <div class="blur-layer"></div>
+                </div>
+
+                <div class="queue-info">
+                  <p>Chunly</p>
+                  <span>Else</span>
+                </div>
+              </div>
+              <i class="far fa-heart"></i>
+            </li>
+
+            <!-- Repeat items -->
+            <li class="queue-list-items">
+              <div class="queue-list-items-names">
+                <span>11</span>
+                <div class="image-wrapper">
+                  <img
+                    src="./assets/images/poster-icon-image.png"
+                    alt="Song"
+                    class="queue-list-items-image"
+                  />
+                  <div class="blur-layer"></div>
+                </div>
+
+                <div class="queue-info">
+                  <p>Chunly</p>
+                  <span>Else</span>
+                </div>
+              </div>
+              <i class="far fa-heart"></i>
+            </li>
+            <!-- Repeat items -->
+            <li class="queue-list-items">
+              <div class="queue-list-items-names">
+                <span>12</span>
+                <div class="image-wrapper">
+                  <img
+                    src="./assets/images/poster-icon-image.png"
+                    alt="Song"
+                    class="queue-list-items-image"
+                  />
+                  <div class="blur-layer"></div>
+                </div>
+
+                <div class="queue-info">
+                  <p>Chunly</p>
+                  <span>Else</span>
+                </div>
+              </div>
+              <i class="far fa-heart"></i>
+            </li>
+            <!-- Repeat items -->
+            <li class="queue-list-items">
+              <div class="queue-list-items-names">
+                <span>13</span>
+                <div class="image-wrapper">
+                  <img
+                    src="./assets/images/poster-icon-image.png"
+                    alt="Song"
+                    class="queue-list-items-image"
+                  />
+                  <div class="blur-layer"></div>
+                </div>
+
+                <div class="queue-info">
+                  <p>Chunly</p>
+                  <span>Else</span>
+                </div>
+              </div>
+              <i class="far fa-heart"></i>
+            </li>
+            <!-- Repeat items -->
+            <li class="queue-list-items">
+              <div class="queue-list-items-names">
+                <span>14</span>
+                <div class="image-wrapper">
+                  <img
+                    src="./assets/images/poster-icon-image.png"
+                    alt="Song"
+                    class="queue-list-items-image"
+                  />
+                  <div class="blur-layer"></div>
+                </div>
+
+                <div class="queue-info">
+                  <p>Chunly</p>
+                  <span>Else</span>
+                </div>
+              </div>
+              <i class="far fa-heart"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="left-footer">
+          <img
+            src="./assets/images/poster-icon-image.png"
+            alt=" image"
+            class="left-footer-image"
+          />
+          <div class="artist-container">
+            <div class="left-footer-artist">
+              <div class="marquee">
+                <p>Imagine by John image hello long text goes here...</p>
+              </div>
+              <p>John Lenon</p>
+            </div>
+            <div class="left-footer-icon">
+              <i class="far fa-heart" onClick="alert('Liked')"></i>
+              <i class="fa-solid fa-circle-half-stroke"></i>
+            </div>
+          </div>
+        </div>
+        <div class="middle-footer">
+          <div class="play-control-container">
+            <div class="top-play-controller">
+              <i class="fa-solid fa-shuffle"></i>
+              <i class="fa-solid fa-backward-step"></i>
+              <i class="fa-solid fa-play"></i>
+              <i class="fa-solid fa-forward-step"></i>
+              <i class="fa-solid fa-repeat"></i>
+            </div>
+            <div class="bottom-play-controller">
+              <span>1:47</span>
+              <progress
+                class="music-play-progress"
+                value="80"
+                max="100"
+              ></progress>
+              <span>2:39</span>
+            </div>
+          </div>
+        </div>
+        <div class="right-footer">
+          <i class="fa-solid fa-list-check"></i>
+          <i class="fa-solid fa-computer"></i>
+          <i class="fa-solid fa-volume-high"></i>
+          <progress class="volume-progress" value="40" max="100"></progress>
+          <i class="fa-solid fa-arrow-up-right-dots"></i>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const displayQueueDropdown = (value) => {
+        if (value === "latest-release") {
+          const dropdownLayout = document.querySelector(".dropdown-layout-");
+
+          if (!dropdownLayout) {
+            console.warn("Dropdown element not found.");
+            return;
+          }
+
+          let currentDisplay = window.getComputedStyle(dropdownLayout).display;
+          console.log("Current display:", currentDisplay);
+
+          dropdownLayout.style.display =
+            currentDisplay === "none" ? "block" : "none";
+        } else if (value === "queue-dropdown") {
+          console.log("inside queue-dropdown");
+
+          const dropdownLayout = document.querySelector(".dropdown-layout");
+
+          if (!dropdownLayout) {
+            console.warn("Dropdown element not found.");
+            return;
+          }
+
+          const currentDisplay =
+            window.getComputedStyle(dropdownLayout).display;
+          console.log("Current display:", currentDisplay);
+
+          dropdownLayout.style.display =
+            currentDisplay === "none" ? "block" : "none";
+        }
+      };
+    </script>
+
+    <script src="/scripts/script.js"></script>
+  </body>
+</html>
