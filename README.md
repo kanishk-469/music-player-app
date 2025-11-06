@@ -85,9 +85,9 @@ music-player-app/
 
 ## 📸 Screenshots
 
-| Desktop View                       | Recently Played Section          |
-| ---------------------------------- | -------------------------------- |
-| ![Main Screen](.screenshots/1.png) | ![Playlist](./screenshots/2.png) |
+| Desktop View                        | Recently Played Section          |
+| ----------------------------------- | -------------------------------- |
+| ![Main Screen](./screenshots/1.png) | ![Playlist](./screenshots/2.png) |
 
 ---
 
@@ -95,7 +95,7 @@ music-player-app/
 
 **Kanishka Singh**
 💌 [Connect on LinkedIn](https://www.linkedin.com/in/kanishka-singh-14291157/)
-🐙 [GitHub](https://github.com/yourusername)
+🐙 [GitHub](https://github.com/kanishk-469)
 
 ---
 
